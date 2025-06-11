@@ -1,0 +1,12 @@
+apiVersion: external-secrets.io/v1
+kind: SecretStore
+metadata:
+  name: secret-server-store
+spec:
+  provider:
+    secretserver:
+      serverURL: "https://yourtenantname.secretservercloud.com"
+      username:
+        value: "yourusername"
+      password:
+        value: "password"
